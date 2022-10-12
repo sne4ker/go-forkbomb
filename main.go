@@ -8,7 +8,7 @@ import (
 )
 
 func main() {
-   err := fmt.Errorf("")
+   err := fmt.Errorf("error")
    exPath := ""
 
    for err != nil {
